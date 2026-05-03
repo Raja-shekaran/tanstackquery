@@ -20,7 +20,7 @@ export const QueryExample = () => {
     isLoading,
     isError,
     error,
-    refetch,
+    refetch, //Can be called inside or Children of this componenet where useQuery is used
   } = useQuery<User[]>({
     queryKey: ["users"],
     queryFn: fetchData,
